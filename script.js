@@ -41,6 +41,6 @@ automoney = 0
     function automoneyfunc(){
         money = money + automoney
         textautomoney.textContent = automoney + " /s"
-        textclickmoney.textContent = mult + " /s"
+        textclickmoney.textContent = mult + " /click"
         textMoney.textContent = money + " $"
     }
