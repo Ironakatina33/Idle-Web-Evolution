@@ -4,6 +4,7 @@ const makemoney = document.querySelector('.make-money')
 const textMoney = document.querySelector('.money')
 const upgrade1 = document.querySelector('.upgrade-1')
 const textautomoney = document.querySelector('.automoney')
+const textclickmoney = document.querySelector('.clickmoney')
 mult = 1
 automoney = 0
 
@@ -40,5 +41,6 @@ automoney = 0
     function automoneyfunc(){
         money = money + automoney
         textautomoney.textContent = automoney + " /s"
+        textclickmoney.textContent = mult + " /s"
         textMoney.textContent = money + " $"
     }
