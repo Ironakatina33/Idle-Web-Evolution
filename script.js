@@ -3,12 +3,14 @@ money = 0
 const makemoney = document.querySelector('.make-money')
 const textMoney = document.querySelector('.money')
 const upgrade1 = document.querySelector('.upgrade-1')
+const upgrade2 = document.querySelector('.upgrade-2')
 const textautomoney = document.querySelector('.automoney')
 const textclickmoney = document.querySelector('.clickmoney')
+const back = document.querySelector('.bodyb')
 mult = 1
 automoney = 0
 
-
+upgrade2.style.display = 'none'
 
 
 
@@ -31,6 +33,20 @@ automoney = 0
             textMoney.textContent = money + " $"
             mult = mult + 10
             automoney = automoney + 1 
+            upgrade2.style.display = ''
+
+
+    })
+
+    upgrade2.addEventListener('click', function(){
+        if (money >= 1000)
+            upgrade2.style.display = 'none';
+            money = money - 1000
+            textMoney.textContent = money + " $"
+            mult = mult + 10
+            automoney = automoney + 1 
+            back.classList.add("bbleu");
+
 
     })
 
