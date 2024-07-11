@@ -27,26 +27,30 @@ upgrade2.style.display = 'none'
     })
 
     upgrade1.addEventListener('click', function(){
-        if (money >= 100)
+        if (money >= 10){
             upgrade1.style.display = 'none';
             money = money - 100
             textMoney.textContent = money + " $"
-            mult = mult + 10
+            mult = mult + 0
             automoney = automoney + 1 
             upgrade2.style.display = ''
-
+        } else {
+            alert("Pas assez d'argent")
+        }
 
     })
 
     upgrade2.addEventListener('click', function(){
-        if (money >= 1000)
+        if (money >= 100){
             upgrade2.style.display = 'none';
             money = money - 1000
             textMoney.textContent = money + " $"
             mult = mult + 10
             automoney = automoney + 1 
             back.classList.add("bbleu");
-
+        } else {
+            alert("Pas assez d'argent")
+        }
 
     })
 
